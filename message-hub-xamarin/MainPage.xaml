@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="message_hub_xamarin.MainPage"
+             Title="Message List">
+
+    <StackLayout>
+        <!-- Place new controls here -->
+
+        <Label x:Name="label3"
+               Text="You can get the server messages by clicking the button below"
+               FontSize="20"
+               VerticalOptions="CenterAndExpand"
+         />
+
+        <Button x:Name="Button1"
+                Clicked="ButtonClicked"
+                Text="Get messages"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Red"
+        ></Button>
+
+        <ScrollView VerticalOptions="FillAndExpand"
+                    Margin="10">
+
+            <Label x:Name="label2"
+           Text=""
+           FontSize="Large"
+           HorizontalOptions="CenterAndExpand"
+           VerticalOptions="CenterAndExpand" 
+           />
+
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
